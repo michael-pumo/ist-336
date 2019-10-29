@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+    <!--
+        *************************************************************
+        Title: Rental Page
+        Use: To help visitors learn about our rental offerings
+        Author: Michael Pumo
+        School/Term: Southern Illinois University, Fall 2019
+        Developed: Sep 11, 2019
+        Tested: October 10, 2019; Passed on Safari and Chrome browsers
+        *************************************************************
+    -->
+        <title>Pumo's Bicycles</title>
+        <meta charset="utf-8">
+        <meta name="description" content="A small, family owned shop offering a large variety of bicycles and serving the northwest suburbs of Chicago since 2019">
+        <meta name="keywords" content="chicago, schaumburg, bicycles, mountain, hybrid, triathlon, bmx, commuting">
+        <meta name="viewport" content="width=device-width, intital-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>    
+    <body>
+        <header>
+            <h1>Pumo's Rentals</h1>
+                <h2>We now offer a rental service so that you can try before you buy!</h2>    
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul> 
+                    <li><a href=index.htm>Home</a></li>
+                    <li><a href=rentals.htm class="current">Rentals</a></li>
+                    <li><a href=sales.htm>Sales</a></li>
+                    <li><a href=services.htm>Services</a></li>
+                    <li><a href=contact.htm>Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section-1">
+                <h2>Bicycles available:</h2>
+                    <!--List valid as of September 2019-->
+                    <ul>
+                        <li>Street bikes (riding on pavement)
+                            <ul>
+                                <li>Cannondale</li>
+                                <li>Pure Cycles</li>
+                            </ul>                          
+                        </li>
+                        <li>Mountain bikes (for rough terrain)
+                            <ul>
+                                <li>Diamondback</li>
+                                <li>Co-op cycles</li>
+                            </ul>
+                        </li>
+                    </ul>
+                <!--Prices valid as of September 2019-->
+                <p><b>Prices range from $15 to $55 per day based on make and model of bicycle.</b></p>
+                <div class="image-rentals"><img src="images/mountain-bike.jpg" class="round-shadow width-100" alt="mountain bicycle">
+                    </div>
+            </section>
+            <section class="section-2">
+                <div class="image-rentals">
+                    <img src="images/helmet.jpg" class="round-shadow width-100" alt="safety bicycle">
+                </div>
+                <h2>We also rent safety gear!</h2>
+                    <ul>
+                        <li>Helmets</li>
+                        <li>Elbow and knee pads</li>
+                        <li>Gloves</li>
+                        <li>And more!</li>
+                    </ul>
+                <p>Ask about our bundle pricing!</p>        
+            </section>
+        </main>
+        <footer class=footer-two-column>
+            <!--Terms and conditions last modified September 2019-->
+            <p><b>Rental terms and conditions:</b> Customer accepts all liability for any injuries that may occur. Bicycle will be inspected prior to rental and after return. Customer will be held financially responsible for any damage that may occur to any items rented. Customers may not keep bicycles for longer than 5 days at a time. Must be 18 years or older to rent a bicycle.</p>
+        </footer>
+    </body>
+</html>

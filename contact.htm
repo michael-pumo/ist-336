@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">    
+<head>
+     <!--
+        *************************************************************
+        Title: Contact page
+        Use: To help visitors contact a member of our team
+        Author: Michael Pumo
+        School/Term: Southern Illinois University, Fall 2019
+        Developed: October 25, 2019
+        Tested: October 25, 2019; Passed on Safari and Chrome browsers
+        *************************************************************
+    -->
+        <title>Pumo's Bicycles</title>
+        <meta charset="utf-8">
+        <meta name="description" content="A small, family owned shop offering a large variety of bicycles and serving the northwest suburbs of Chicago since 2019">
+        <meta name="keywords" content="chicago, schaumburg, bicycles, mountain, hybrid, triathlon, bmx, commuting">
+        <meta name="viewport" content="width=device-width, intital-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+    <header>
+        <h1>Contact us</h1>
+        <h2>Give us a call, send an email, or stop on by!</h2>    
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul> 
+                <li><a href=index.htm>Home</a></li>
+                <li><a href=rentals.htm>Rentals</a></li>
+                <li><a href=sales.htm>Sales</a></li>
+                <li><a href=services.htm>Services</a></li>
+                <li><a href=contact.htm class="current">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="submit_form" action="response.htm">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" minlength="15" maxlength="25" title="Must be between 15 and 25 characters" required autofocus><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" minlength="15" maxlength="50" title="Must be between 15 and 50 characters" required><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" minlength="4" maxlength="25" title="Must be between 4 and 25 characters" required><br>
+            <label for="state">State:</label>
+                <select id="state" required>
+                    <option value="">&nbsp;</option>
+                    <optgroup label="State">                        
+                        <option value="in">ID</option> 
+                        <option value="il" selected>IL</option> 
+                        <option value="in">IN</option> 
+                        <option value="mo">MO</option>
+                        <option value="oh">OH</option>
+                        <option value="pa">PA</option> 
+                        <option value="wi">WI</option>                     
+                    </optgroup>
+                </select><br>  
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" pattern="\d{5}([\-]\d{4})?" placeholder="Either 5 or 10 digits" title="Must be 99999 or 99999-9999" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="999-999-9999" minlength="10" maxlength="12" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999" required><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="example@domain.com" minlength="10" maxlength="25" required><br>
+            <label for="date">Submission Date:</label>
+            <input type="date" id="date" required><br>
+            <fieldset>
+                <legend>Inquiry Type</legend>
+                <input type="checkbox" name="inquiry1" id="inquiry1" value="sales">
+                <label for="inquiry1">Sales</label><br>
+                <input type="checkbox" name="inquiry2" id="inquiry2" value="services">
+                <label for="inquiry2">Services</label><br>
+                <input type="checkbox" name="inquiry3" id="inquiry3" value="rentals">
+                <label for="inquiry3">Rentals</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Bicycle Type</legend>
+        <!-- List of bicycle types valid as of October 2019 -->
+                <input type="radio" name="bicycletype" id="bicycletype1" value="cannondale" required >
+                <label for="bicycletype1">Cannondale</label><br>
+                <input type="radio" name="bicycletype" id="bicycletype2" value="coopcycle">
+                <label for="bicycletype2">Co-op Cycle</label><br>
+                <input type="radio" name="bicycletype" id="bicycletype3" value="diamondback">
+                <label for="bicycletype3">Diamondback</label><br>
+                <input type="radio" name="bicycletype" id="bicycletype4" value="purecycle">
+                <label for="bicycletype4">Pure Cycle</label>
+            </fieldset>
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="If you have a message, please enter it here." title="Must be between 20 and 200 characters" minlength="20" maxlength="200" required></textarea> <br> 
+            <input type="submit" id="submit" value="Send">
+            <input type="reset" id="reset" value="Reset">
+        </form>    
+    </main>
+</body>
+</html>

@@ -1,0 +1,296 @@
+/*
+*************************************************************
+        Title: Main CSS sheet
+        Use: To set the main styles relative to the entire site
+        Author: Michael Pumo
+        School/Term: Southern Illinois University, Fall 2019
+        Developed: September 18, 2019
+        Tested: September 18, 2019; Passed on Safari and Chrome browsers
+*************************************************************
+*/
+
+/* the standard styles for 960px screens or above */
+
+/* the styles for the elements */
+body { 
+    width: 95%;
+    max-width: 1200px;
+    background-color: azure;
+    margin: 0 auto; }
+
+p {
+    padding-left: .689%; 
+    padding-right: .689%; }
+
+h1, h2 { padding: 10px 1.36%; }
+
+h3 { padding: 0 1.36%; }
+
+/* the styles for the images */
+.blue-border {
+    border: thin solid blue;
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px; }
+
+.width-100 {    
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px; }
+
+.round-shadow {
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px gray; }
+
+/* the styles for the address */
+address { padding-left: 2.272% }
+
+/* the styles for the navigational menu */
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: aliceblue; }
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 5%; }
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: blue; }
+
+#nav_menu ul li a.current { text-decoration: none; }
+
+/* the styles for the list content */
+
+li { padding-left: 1%; }
+
+/* the styles for the footer section */
+.footer-two-column {
+    clear: both;
+    border-top: 2px solid gray; }
+
+footer p {
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 90% }
+
+/* The stylea for the index page */
+.left-index{ float:left;
+    float:left;
+    width: 35%;
+    min-width: 30%; }
+
+.right-index { float:left;
+    margin-left: 2em; 
+    width: 40%;
+    margin-bottom: 10px; }
+
+.clear-index{
+    clear: both; }
+
+audio {
+   width: 100%;
+    max-width: 350px;
+    min-width: 150px; }
+
+.figure-index {   
+    margin-right: 1em;
+    margin-left: 1em; }
+
+.figcaption-index {
+    display: block;
+    font-size: 80%;
+    font-weight: bold;
+    padding-top: .25em;
+    padding-bottom: 2em; }
+
+/* the styles for rentals page */
+.section-1 { 
+    width: 39%;
+    border-right: 2px solid gray;
+    padding: 0% 5% 5%;
+    float: left; }
+
+.section-2 {
+    width: 39%;    
+    padding: 5%;
+    float: right; }
+
+/* the styles for the sales page */
+.container-sales {
+    padding-left: 5%;
+    padding-right: 5%; }
+
+.video-sales {     
+        float: right;
+        padding-left: 5%; }
+
+.text-sales h3 { margin-bottom: .5em; }
+
+.text-sales ul { margin-top: .5em; }
+
+.text-sales ul li { padding-bottom: .25em; }
+
+/* the styles for the services page */
+
+.figure-services {
+    margin: 0;
+    padding: 15px; }
+
+.figcaption-services {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    padding-bottom: 7.5px; }
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%; }
+
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em; }
+
+thead {
+    font-weight: bold;
+    background-color: aqua; }
+
+tbody tr:nth-child(even) {
+    background-color: silver; }
+
+td:nth-child(3) {
+    text-align: right; }
+
+/* the styles for the contact us page */
+
+label {
+    color: navy;
+    float: left;
+    width: 10em;
+    text-align: right;
+    font-weight: bold; }
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 15em; }
+
+input:focus { border: 2px solid navy; }
+
+input:required, textarea:required { border: 1px solid red; }
+
+input:valid, select:valid, textarea:valid {
+    border: 1px solid black; }
+
+br { clear: both; }
+
+select {
+    margin-left: 1em;
+    margin-bottom: .5em; 
+    border: 1px solid red; }
+
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: .5em;
+    width: 350px; }
+
+fieldset input { 
+    margin-left: 2em;
+    margin-right: 1em;    
+    width: 1em;
+    float: left; }
+
+fieldset label {
+    text-align: left;
+    color: navy;
+    width: 10em;
+    font-weight: normal; }
+
+legend { font-weight: bold; }
+
+textarea { 
+    width: 40%;
+    margin-left: 1em;
+    margin-bottom: 1em; }
+
+#submit { margin-left: 15.5em; }
+
+#reset { margin-left: 5em; } 
+
+#submit, #reset { 
+    width: 10em;
+    box-shadow: 2px 2px 0 navy;
+    background-color: silver; }
+
+/* hide the mobile menu initially */
+#mobile_menu { display: none; }
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    body { background-color: antiquewhite; }
+    #nav_menu ul { 
+    background-color: beige;
+    font-size: 125%; }
+    figure {margin-right: 5em;}
+    .section-1 { border-right: none; }
+    .footer-two-column { border-top: none; } }
+    
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    body { background-color: floralwhite; }
+    #nav_menu { display:none; }
+    #mobile_menu { 
+        display: block; 
+        padding-bottom: 20px;
+        text-align: right; }
+    .slicknav_menu { background-color: darkkhaki !important;}   
+    body{ width: 100%; }
+    header { text-align: center;}
+    header h2 {
+        font-size: 1.25em;
+        margin: .4em 0 .25em 0; }
+    .left-index{ float: none; }
+    .section-1 { width: 96%; }
+    .section-2 {
+        width: 96%;
+        float: none; }
+    .width-100 { 
+        min-width: 150px;
+        max-width: 40%; }
+    footer p { font-size: .875em; }
+    .image-rentals {text-align: center;}
+    .audio-index { text-align: center;}
+    .video-sales {     
+        float: none;
+        text-align: center; }
+    th, td{ display: block;}
+    thead { display: none; }
+    td:nth-child(3) { text-align: left; }    
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color: aqua; }
+    td:nth-child(2), td:nth-child(3) {border-bottom-style: dashed; } 
+    #reset { margin-left: 1em; } }
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 479px) {
+    body { background-color: aquamarine; }
+    header h2 { font-size: 1em; }
+    p { font-size: .875em; }
+    section h2 { font-size: 1em; }
+    section li { font-size: .875em; }
+    section img { 
+        float: none;
+        width: 100%;
+        margin-right: 0; }
+    footer p { font-size: .6875em; } }

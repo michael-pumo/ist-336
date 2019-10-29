@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+         <!--
+            *************************************************************
+            Title: Sales Page
+            Use: To help visitors become familiar with the products we offer
+            Author: Michael Pumo
+            School/Term: Southern Illinois University, Fall 2019
+            Developed: October 10, 2019
+            Tested: October 10, 2019; Passed on Safari and Chrome browsers
+            *************************************************************
+        -->
+            <title>Pumo's Bicycles</title>
+            <meta charset="utf-8">
+            <meta name="description" content="A small, family owned shop offering a large variety of bicycles and serving the northwest suburbs of Chicago since 2019">
+            <meta name="keywords" content="chicago, schaumburg, bicycles, mountain, hybrid, triathlon, bmx, commuting">     
+            <meta name="viewport" content="width=device-width, intital-scale=1">
+            <link rel="stylesheet" href="styles/main.css">
+            <link rel="stylesheet" href="styles/slicknav.css">
+            <link rel="shortcut icon" href="images/favicon.ico">
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="js/jquery.slicknav.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+                });
+            </script>
+    </head>
+    <body>
+        <header>
+            <h1>Pumo's Sales</h1>
+            <h2>We offer a large variety of bicycles!</h2>    
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul> 
+                    <li><a href=index.htm>Home</a></li>
+                    <li><a href=rentals.htm>Rentals</a></li>
+                    <li><a href=sales.htm class="current">Sales</a></li>
+                    <li><a href=services.htm>Services</a></li>
+                    <li><a href=contact.htm>Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container-sales">
+                <div class="video-sales">
+                    <video id="videoplayer" height="480" src="media/video.mp4" controls autoplay></video>
+                </div>
+                <div class="text-sales">
+        <!-- Inventory and prices valid as of 10 Oct 2019 -->
+                    <h2>Bicycles and gear for all situations!</h2>
+                    <h3>Street bikes</h3>
+                    <ul>
+                        <li>Pure Cycles bicyles from $350 to $499</li>
+                        <li>Cannondale bicycles from $1,500 to $2,400</li>
+                    </ul>
+                    <h3>Mountain bikes</h3>
+                    <ul>
+                        <li>Diamandback bicycles from $350 to $1,000</li>
+                        <li>Co-op bicycles from $550 to $1,500</li>
+                    </ul>
+                    <h3>Gear</h3>
+                    <ul>
+                        <li>We have a wide range of accessories available! Stop in or call for prices and availability.</li>
+                    </ul>
+                    <p>New bicycles available weekly. Check the website frequently for new deals! All sales are final.</p>                
+                </div>
+            </div>              
+        </main>
+    </body>
+</html>
