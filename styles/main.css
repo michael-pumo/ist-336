@@ -231,6 +231,14 @@ textarea {
     box-shadow: 2px 2px 0 navy;
     background-color: silver; }
 
+/* the styles for embedding fonts */
+@font-face {
+    font-family: Rubik;
+    src: url("/fonts/Rubik-Light.ttf"); }
+
+#rubik { font-family: Rubik, sans-serif; }
+
+
 /* hide the mobile menu initially */
 #mobile_menu { display: none; }
 
